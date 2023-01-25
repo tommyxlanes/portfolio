@@ -1,4 +1,4 @@
-import React from 'react'
+'use client'
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
@@ -7,18 +7,27 @@ const Projects = () => {
     const projects = [
         { image: '/brochures-thumb.png', 
           title: 'Brochure Design',
+          type: 'brochure',
           desc: 'Following modern designs and trends to show case any product and or company.'
         },
         { image: '/menu-thumb.png', 
           title: 'Menu Design',
+          type: 'menu',
           desc: 'Following modern designs and trends to show case any product and or company.'
         },
         { image: '/logo-thumb.png', 
           title: 'Logo Design',
+          type: 'logo',
           desc: 'Following modern designs and trends to show case any product and or company.'
         },
         { image: '/graphic-thumb.png', 
           title: 'Graphic Application',
+          type: 'other',
+          desc: 'Following modern designs and trends to show case any product and or company.'
+        },
+        { image: '/ad-thumb.png', 
+          title: 'Advertisements',
+          type: 'ad',
           desc: 'Following modern designs and trends to show case any product and or company.'
         }
     ]
@@ -63,7 +72,7 @@ const Projects = () => {
                         </p>
 
                         <div className=''>
-                            <Link href={`/projects`}>
+                            <Link href={`/projects/${proj.type}`}>
                                 <button className='text-gray-300 border-[1px] px-8 py-2 
                                 rounded-md hover:bg-gray-300 transition duration-150 hover:text-gray-700'>
                                     See More

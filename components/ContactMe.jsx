@@ -1,6 +1,8 @@
+'use client'
+
 import React, { useRef } from 'react'
 
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
+import { MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import { useForm, SubmitHandler } from 'react-hook-form';
 
 import { animate, motion } from 'framer-motion'
@@ -21,22 +23,7 @@ const ContactMe = () => {
         <h3 className='absolute top-12 uppercase tracking-[20px] text-gray-500 text-2xl'>
             Contact
         </h3>
-        {/* <motion.div 
-            initial={{
-                opacity: 0,
-                y: 50
-            }}
-            whileInView={{
-                opacity: 1,
-                y: 0
-            }}
-            transition={{ duration: .4}}
-            viewport={{ once: false }}
-            className='uppercase tracking-[20px]
-        text-gray-500 text-2xl'>
-            Contact
-        </motion.div> */}
-
+       
         <motion.div 
             initial={{
                 opacity: 0,
@@ -56,13 +43,8 @@ const ContactMe = () => {
 
             <div className='space-y-10'>
                 <div className='flex items-center space-x-5 justify-center'>
-                    <PhoneIcon className='text-[#F7AB0A] h-7 w-7'/>
-                    <p>213.344.5235</p>
-                </div>
-
-                <div className='flex items-center space-x-5 justify-center'>
                     <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7'/>
-                    <p>Tommy@example.com</p>
+                    <p>Tom-is-me@yahoo.com</p>
                 </div>
 
                 <div className='flex items-center space-x-5 justify-center'>
@@ -95,7 +77,7 @@ const ContactMe = () => {
                 <textarea 
                     {...register('message')}
                     placeholder='Message'
-                    className='contactInput' />
+                    className='contactInput' required />
 
                 <button 
                     type='submit'

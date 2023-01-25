@@ -21,7 +21,7 @@ const Hero = ({heading, message}) => {
         <div className='relative rounded-full mx-auto w-32 h-32 md:w-56 md:h-56 z-10 mb-4'>
             <Image 
                 className='rounded-full'
-                src='https://cdn.sanity.io/images/ykycr6aq/production/a2b9d1227d963efd24483fe4db9da7ea116a9f57-500x472.png' 
+                src='/profile.png'
                 layout='fill' 
                 objectFit='cover' 
                 alt='' />

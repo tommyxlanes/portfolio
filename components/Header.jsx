@@ -14,11 +14,6 @@ const NavBar = () => {
     const [open, setopen] = useState(false);
     const [color, setcolor] = useState('transparent');
     const [textcolor, settextcolor] = useState('white');
-    const [scrollY, setscrollY] = useState(0);
-
-    const path = usePathname()
-
-    console.log(path)
 
     const handleNav = () => {
         setopen(v => !v)
@@ -39,10 +34,7 @@ const NavBar = () => {
     }, []);
 
   return (
-    // ${color === 'transparent' ? '' : 'border-b-2 border-[gold]'}`
-    <>
-        {path.includes('/studio') ? <div /> : 
-            <header style={{ backgroundColor: `${color}`}} className='fixed left-0 top-0 z-20 w-full duration-300'>
+    <header style={{ backgroundColor: `${color}`}} className='fixed left-0 top-0 z-20 w-full duration-300'>
         <div className={`max-w-[1240px] p-4 m-auto flex justify-between items-center
         text-white`}>
             <motion.div
@@ -89,37 +81,26 @@ const NavBar = () => {
                         duration: 1.5
                     }}
                 >
-                {/* <ul 
-                    style={{ color: `${textcolor}`}}
-                    className='hidden sm:flex justify-end'>
-                    <li className='p-4 hover:text-gray-300 transition duration-300'>
-                        <Link href='/'>Home</Link>
-                    </li>
-                    <li className='p-4 hover:text-gray-300 transition duration-300'>
-                        <Link href='#gallery'>Gallery</Link>
-                    </li>
-                    <li className='p-4 hover:text-gray-300 transition duration-300'>
-                        <Link href='#skills'>Skills</Link>
-                    </li>
-                    <li className='p-4 hover:text-gray-300 transition duration-300'>
-                        <Link href='#contact-me'>Contact</Link>
-                    </li>
-                </ul> */}
+               
                 <div style={{ color: `${textcolor}`}} 
                     className='sticky z-20 top-0 pt-5 w-full hidden sm:flex justify-end'>
-                    <a href='#hero'>
+                    <a href='/'>
                         <button className='font-extralight p-6 hover:text-gray-300 
                         transition duration-300'>HOME</button>
                     </a>
-                    <a href='#gallery'>
+                    <a href='/#works'>
                         <button className='font-extralight p-6 hover:text-gray-300 
-                        transition duration-300'>GALLERY</button>
+                        transition duration-300'>WORKS</button>
                     </a>
-                    <a href='#skills'>
+                    <a href='/#skills'>
                         <button className='font-extralight p-6 hover:text-gray-300 
                         transition duration-300'>SKILLS</button>
                     </a>
-                    <a href='#contact-me'>
+                    <a href='/projects'>
+                        <button className='font-extralight p-6 hover:text-gray-300 
+                        transition duration-300'>PROJECTS</button>
+                    </a>
+                    <a href='/#contact-me'>
                         <button className='font-extralight p-6 hover:text-gray-300 
                         transition duration-300'>CONTACT</button>
                     </a>
@@ -156,24 +137,35 @@ const NavBar = () => {
                 bottom-0 flex justify-center items-center text-center transition
                 duration-300 ease-out`}>
                 <ul>
-                    <li className='p-4 text-4xl hover:text-gray-500 transition duration-300'>
-                        <Link href='/'>Home</Link>
+                    <li 
+                        onClick={() => setopen(false)}
+                        className='p-4 text-4xl hover:text-gray-500 transition duration-300'>
+                        <a href='/'>HOME</a>
                     </li>
-                    <li className='p-4 text-4xl hover:text-gray-500 transition duration-300'>
-                        <Link href='/gallery'>Gallery</Link>
+                    <li 
+                        onClick={() => setopen(false)}
+                        className='p-4 text-4xl hover:text-gray-500 transition duration-300'>
+                        <a href='/#works'>WORKS</a>
                     </li>
-                    <li className='p-4 text-4xl hover:text-gray-500 transition duration-300'>
-                        <Link href='/work'>Work</Link>
+                    <li 
+                        onClick={() => setopen(false)}
+                        className='p-4 text-4xl hover:text-gray-500 transition duration-300'>
+                        <a href='/#skills'>SKILLS</a>
                     </li>
-                    <li className='p-4 text-4xl hover:text-gray-500 transition duration-300'>
-                        <Link href='/contact'>Contact</Link>
+                    <li 
+                        onClick={() => setopen(false)}
+                        className='p-4 text-4xl hover:text-gray-500 transition duration-300'>
+                        <a href='/projects'>PROJECTS</a>
+                    </li>
+                    <li 
+                        onClick={() => setopen(false)}
+                        className='p-4 text-4xl hover:text-gray-500 transition duration-300'>
+                        <a href='/#contact-me'>CONTACT ME</a>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
-        }
-    </>
   )
 }
 

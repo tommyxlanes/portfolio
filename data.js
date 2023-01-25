@@ -15,3 +15,27 @@ export const slides = [
         image: "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
     }
 ]
+
+export const skills = [
+  {
+    percent: .90, name: 'JavaScript'
+  },
+  {
+    percent: .90, name: 'HTML'
+  },
+  {
+    percent: .90, name: 'CSS'
+  },
+  {
+    percent: .75, name: 'Node Js'
+  },
+  {
+    percent: .85, name: 'React Js'
+  },
+  {
+    percent: .95, name: 'PhotoShop'
+  },
+  {
+    percent: .95, name: 'Illustrator'
+  }
+]

@@ -1,8 +1,9 @@
-import '../styles/globals.css'
+import '../../styles/globals.css'
 
-import Header from '../components/Header'
+import Header from '../../components/Header'
 
 import { Pacifico } from '@next/font/google'
+import Footer from '../../components/Footer'
 
 const pacifico = Pacifico({
   subsets: ['latin'],
@@ -14,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html className={`${pacifico.variable}`}>
       <head />
-      <body className='bg-[#1e1e1e]'>
+      <body className='bg-[#1e1e1e] relative'>
         <Header />
         {children}
       </body>
