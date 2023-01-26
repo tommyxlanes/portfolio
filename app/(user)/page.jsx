@@ -14,6 +14,10 @@ import Modal from '../../components/Modal'
 import { useState } from 'react'
 import Footer from '../../components/Footer'
 
+import Experiences from '../../components/Experiences'
+
+import { experiences } from '../../experiences'
+
 const Home = () => {
   // const [modal, setmodal] = useState(false);
 
@@ -31,9 +35,13 @@ const Home = () => {
           <Hero />
         </section>
 
-        <section id='works' className='snap-start'>
-          <Projects />
+        <section id='experience'>
+          <Experiences experiences={experiences}/>
         </section>
+
+        {/* <section id='works' className='snap-start'>
+          <Projects />
+        </section> */}
         
         <section id='skills' className='snap-start'>
           <Skills skills={skills}/>

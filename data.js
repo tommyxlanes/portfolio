@@ -18,24 +18,43 @@ export const slides = [
 
 export const skills = [
   {
-    percent: .90, name: 'JavaScript'
+    percent: .90, 
+    name: 'JavaScript',
+    image: 'javascript.png'
   },
   {
-    percent: .90, name: 'HTML'
+    percent: .90, 
+    name: 'HTML',
+    image: 'html.png'
   },
   {
-    percent: .90, name: 'CSS'
+    percent: .90, 
+    name: 'CSS',
+    image: 'css.png'
   },
   {
-    percent: .75, name: 'Node Js'
+    percent: .75, 
+    name: 'NodeJs',
+    image: 'nodejs.png'
   },
   {
-    percent: .85, name: 'React Js'
+    percent: .90, 
+    name: 'ReactJs',
+    image: 'react.png'
   },
   {
-    percent: .95, name: 'PhotoShop'
+    percent: .95, 
+    name: 'PhotoShop',
+    image: 'photoshop.png'
   },
   {
-    percent: .95, name: 'Illustrator'
+    percent: .95, 
+    name: 'Illustrator',
+    image: 'illustrator.png'
+  },
+  {
+    percent: .75, 
+    name: 'After Effects',
+    image: 'aftereffect.png'
   }
 ]

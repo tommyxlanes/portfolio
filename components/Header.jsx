@@ -88,9 +88,9 @@ const NavBar = () => {
                         <button className='font-extralight p-6 hover:text-gray-300 
                         transition duration-300'>HOME</button>
                     </a>
-                    <a href='/#works'>
+                    <a href='/#experience'>
                         <button className='font-extralight p-6 hover:text-gray-300 
-                        transition duration-300'>WORKS</button>
+                        transition duration-300'>EXPERIENCE</button>
                     </a>
                     <a href='/#skills'>
                         <button className='font-extralight p-6 hover:text-gray-300 
@@ -145,7 +145,7 @@ const NavBar = () => {
                     <li 
                         onClick={() => setopen(false)}
                         className='p-4 text-4xl hover:text-gray-500 transition duration-300'>
-                        <a href='/#works'>WORKS</a>
+                        <a href='/#experience'>EXPERIENCE</a>
                     </li>
                     <li 
                         onClick={() => setopen(false)}
