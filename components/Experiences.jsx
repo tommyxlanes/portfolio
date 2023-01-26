@@ -54,7 +54,7 @@ const Experiences = ({ experiences }) => {
             viewport={{ once: false }}
                     ref={divRef}
                     className='overflow-x-hidden flex relative mx-auto w-full lg:max-w-[1000px] 
-                    max-h-content lg:h-[500px] xl:h-[600px] xxl:h-[700px] lg:rounded-md'>
+                    max-h-content lg:rounded-md'>
                     <FaArrowCircleLeft 
                                     onClick={()=>handleArrow("l")}
                                     className='absolute top-[50%] left-[30px] opacity-50
