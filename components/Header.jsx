@@ -35,7 +35,7 @@ const NavBar = () => {
 
   return (
     <header style={{ backgroundColor: `${color}`}} className='fixed left-0 top-0 z-20 w-full duration-300'>
-        <div className={`max-w-[1240px] p-4 m-auto flex justify-between items-center
+        <div className={`w-full max-w-[1000px] m-auto flex justify-between items-center
         text-white`}>
             <motion.div
                     initial={{

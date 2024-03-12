@@ -7,7 +7,7 @@ import urlFor from '../utils/urlFor'
 import { motion } from 'framer-motion'
 import Modal from './Modal'
 
-const Project = ({ project, direction }) => {
+const Project = ({ project }) => {
   const [modal, setmodal] = useState(false);
 
   const handleModal = () => {
@@ -20,7 +20,7 @@ const Project = ({ project, direction }) => {
         <motion.div 
             onClick={handleModal}
             initial={{
-                x: direction ? -200 : 200,
+                x: 200,
                 opacity: 0
             }}
             transition={{
